@@ -68,18 +68,18 @@ The platform allows users to:
 
 ```bash
 
-1. **Clone the repository**
+1. Clone the repository
 
 git clone https://github.com/shreyashap/beauty-booking.git
 
 
-2. **Clone the repository**
+2. Install Dependencies
 
 npm install
 # or
 yarn install
 
-3. **Run the development server**
+3. Run the development server
 
 npm run dev
 # or
