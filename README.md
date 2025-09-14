@@ -66,10 +66,11 @@ The platform allows users to:
 
 ## 🚀 Setup Instructions (Run Locally)
 
+```bash
+
 1. **Clone the repository**
 
-```bash
-git clone https://github.com/<your-username>/makeup-artist-booking.git
+git clone https://github.com/shreyashap/beauty-booking.git
 
 
 2. **Clone the repository**
