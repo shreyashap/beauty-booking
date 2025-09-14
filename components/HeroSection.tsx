@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowUpCircleIcon, LucideScanSearch, Search } from "lucide-react";
+import { ArrowUpCircleIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const images = [

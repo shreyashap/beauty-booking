@@ -144,7 +144,19 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-// Dummy Data to simulate multiple bookings (for now, you can replace this with actual data from API/localStorage)
+interface Booking {
+  id: number;
+  artistName: string;
+  artistCategory: string;
+  artistPrice: string;
+  artistImage?: string;
+  userName: string;
+  userEmail: string;
+  userPhone: string;
+  bookingDate: string;
+  bookingTime: string;
+}
+
 const dummyBookings = [
   {
     id: 1,
@@ -176,15 +188,14 @@ const dummyBookings = [
 ];
 
 const BookingHistoryPage = () => {
-  const [bookings, setBookings] = useState<any[]>([]);
+  const [bookings, setBookings] = useState<Booking[]>([]);
 
-  // Fetch all bookings (Here, we're using dummy data, replace it with real data from localStorage/API)
   useEffect(() => {
     const storedBookings = localStorage.getItem("userBookings");
     if (storedBookings) {
-      setBookings(JSON.parse(storedBookings)); // Fetch stored bookings if any
+      setBookings(JSON.parse(storedBookings));
     } else {
-      setBookings(dummyBookings); // For testing, we use dummy bookings
+      setBookings(dummyBookings);
     }
   }, []);
 
@@ -219,7 +230,7 @@ const BookingHistoryPage = () => {
                 No bookings yet.
               </p>
               <p className="text-lg text-gray-600 mt-2">
-                It looks like you haven't booked any artists yet.
+                It looks like you haven&apos;t booked any artists yet.
               </p>
             </div>
           ) : (
