@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Makeup Artist Booking Platform (Mini Web App)
 
-## Getting Started
+A **responsive mini web app** built with **Next.js + TypeScript** that simulates a **makeup artist booking platform**.
 
-First, run the development server:
+---
+
+## 🎯 Project Overview
+
+The platform allows users to:
+
+- Explore **makeup categories** and subcategories.
+- Browse **artist listings** in each category.
+- Book appointments with artists via a **booking form**.
+- View a **confirmation page** after booking.
+- Track their bookings on a **My Bookings** page (stored in local state).
+
+---
+
+## 📌 Features
+
+1. **Landing Page**
+   - Hero section with creative headline and CTA.
+   - Makeup categories presented using cards, tabs, or carousels.
+   - Clickable categories leading to artist listings.
+   - Custom footer with platform info and links.
+
+2. **Artist Listing Page**
+   - Displays all artists in the selected category.
+   - Artist card includes:
+     - Profile picture
+     - Name
+     - Price
+     - Rating (stars)
+     - “Book” button linking to the booking form
+
+3. **Booking Page**
+   - Auto-filled selected artist and category.
+   - Booking form fields:
+     - Name
+     - Email / Phone
+     - Date & Time picker
+   - Form validation and submission handling.
+   - Confirmation page showing booking details.
+
+4. **My Bookings Page**
+   - Displays all previous bookings.
+
+5. **Responsive Design**
+   - Mobile-first layout.
+   - Tailwind CSS styling with modern UI components.
+   - Animated components using Framer Motion.
+
+---
+
+## 🛠 Tech Stack
+
+- **Next.js** – React framework for server-side rendering and routing
+- **TypeScript** – Type-safe frontend development
+- **Tailwind CSS** – Styling and responsive layouts
+- **Framer Motion** – Smooth animations
+- **React Hooks** – State management (useState, useEffect)
+
+---
+
+---
+
+## 🚀 Setup Instructions (Run Locally)
+
+1. **Clone the repository**
 
 ```bash
+git clone https://github.com/<your-username>/makeup-artist-booking.git
+
+
+2. **Clone the repository**
+
+npm install
+# or
+yarn install
+
+3. **Run the development server**
+
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##  🎨 Design Choices
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Color Palette: Shades of black, pink (#ff3479), and white for a luxurious, modern makeup vibe.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Typography: Bold headings, readable body text for clarity.
 
-## Learn More
+UI Components: Rounded buttons, cards, and shadow effects for an elegant look.
 
-To learn more about Next.js, take a look at the following resources:
+Animations: Subtle motion for hero elements, transitions for booking confirmation.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Responsiveness: Mobile-first layout with adaptive grids and flexible spacing.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
