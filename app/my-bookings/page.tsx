@@ -157,35 +157,6 @@ interface Booking {
   bookingTime: string;
 }
 
-const dummyBookings = [
-  {
-    id: 1,
-    artistName: "Aryan Sharma",
-    artistCategory: "Bridal",
-    artistPrice: "$150 - $300",
-    artistImage:
-      "https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D",
-    userName: "John Doe",
-    userEmail: "johndoe@example.com",
-    userPhone: "+123456789",
-    bookingDate: "2025-10-01",
-    bookingTime: "3:00 PM",
-  },
-  {
-    id: 2,
-    artistName: "Meila Khan",
-    artistCategory: "Editorial",
-    artistPrice: "$180 - $300",
-    artistImage:
-      "https://images.unsplash.com/photo-1532074205216-d0e1f4b87368?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D",
-    userName: "Jane Smith",
-    userEmail: "janesmith@example.com",
-    userPhone: "+987654321",
-    bookingDate: "2025-09-20",
-    bookingTime: "11:00 AM",
-  },
-  // Add more bookings as needed
-];
 
 const BookingHistoryPage = () => {
   const [bookings, setBookings] = useState<Booking[]>([]);
@@ -195,7 +166,7 @@ const BookingHistoryPage = () => {
     if (storedBookings) {
       setBookings(JSON.parse(storedBookings));
     } else {
-      setBookings(dummyBookings);
+      setBookings([]);
     }
   }, []);
 
